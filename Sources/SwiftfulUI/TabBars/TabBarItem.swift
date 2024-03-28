@@ -6,6 +6,7 @@
 //
 
 import Foundation
+#if os(iOS)
 import UIKit
 
 public struct TabBarItem: Hashable {
@@ -25,3 +26,7 @@ public struct TabBarItem: Hashable {
         badgeCount = count
     }
 }
+#else
+public struct TabBarItem: Hashable {
+}
+#endif

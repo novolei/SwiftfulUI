@@ -6,8 +6,10 @@
 //
 
 import Foundation
+#if os(iOS)
 import UIKit
 
+@available(iOS 14, *)
 public final class Haptics {
 
     public static let shared = Haptics()
@@ -60,3 +62,7 @@ public final class Haptics {
     }
     
 }
+#else
+public struct Haptics {
+}
+#endif
