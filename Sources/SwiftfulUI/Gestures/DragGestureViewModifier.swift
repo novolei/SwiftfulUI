@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+#if os(iOS)
 struct DragGestureViewModifier: ViewModifier {
     
     @State private var offset: CGSize = .zero
@@ -174,3 +174,6 @@ struct DragGestureViewModifier_Previews: PreviewProvider {
             )
     }
 }
+
+
+#endif

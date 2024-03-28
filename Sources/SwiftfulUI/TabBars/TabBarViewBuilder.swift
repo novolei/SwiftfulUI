@@ -4,6 +4,7 @@
 //
 //  Created by Nick Sarno on 11/13/21.
 //
+#if os(iOS)
 
 import SwiftUI
 
@@ -89,3 +90,4 @@ struct TabBarViewBuilder_Previews: PreviewProvider {
         PreviewView()
     }
 }
+#endif
