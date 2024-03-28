@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+#if os(iOS)
 
 struct MagnificationGestureViewModifier: ViewModifier {
     
@@ -95,3 +96,4 @@ struct MagnificationGestureViewModifier_Previews: PreviewProvider {
     }
 }
 
+#endif

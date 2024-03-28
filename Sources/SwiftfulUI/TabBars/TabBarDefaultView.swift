@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+#if os(iOS)
 
 
 /// Customizable TabBar
@@ -174,3 +175,4 @@ private extension TabBarDefaultView {
     }
     
 }
+#endif

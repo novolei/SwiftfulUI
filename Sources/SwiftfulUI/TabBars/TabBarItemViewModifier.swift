@@ -4,6 +4,7 @@
 //
 //  Created by Nick Sarno on 11/14/21.
 //
+#if os(iOS)
 
 import Foundation
 import SwiftUI
@@ -45,3 +46,4 @@ public extension View {
     }
     
 }
+#endif

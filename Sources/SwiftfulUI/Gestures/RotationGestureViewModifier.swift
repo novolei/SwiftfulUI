@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+#if os(iOS)
 
 struct RotationGestureViewModifier: ViewModifier {
     
@@ -88,3 +89,4 @@ struct RotationGestureViewModifier_Previews: PreviewProvider {
         }
     }
 }
+#endif
